@@ -33,6 +33,7 @@ const useFollowUser = (userId) => {
           ...authUser,
           folling: authUser.folling.filter((uid) => uid !== userId),
         })
+        if(userProfile)
         setUserProfile({
           ...userProfile,
           followers: userProfile.followers.filter((uid) => uid !== authUser.uid)
@@ -48,6 +49,7 @@ const useFollowUser = (userId) => {
         ...authUser,
         folling: [...authUser.folling, userId]
       })
+      if(userProfile)
       setUserProfile({
         ...userProfile,
         followers: [...userProfile.followers,authUser.uid]
