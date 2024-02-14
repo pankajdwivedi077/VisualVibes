@@ -19,7 +19,7 @@ import {
 import { CreatePostLogo } from "../../assets/contants";
 import { BsFillImageFill } from "react-icons/bs";
 import { useRef, useState } from "react";
-import usePreviewImg from "../../hooks/usePreviewimg";
+import usePreviewimg from "../../hooks/usePreviewimg";
 import useShowToast from "../../hooks/useShowToast";
 import useAuthStore from "../../store/authStore";
 import usePostStore from "../../store/postStore";
@@ -33,7 +33,7 @@ const CreatePost = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	const [caption, setCaption] = useState("");
 	const imageRef = useRef(null);
-	const { handleImageChange, selectedFile, setSelectedFile } = usePreviewImg();
+	const { handleImageChange, selectedFile, setSelectedFile } = usePreviewimg();
 	const showToast = useShowToast();
 	const { isLoading, handleCreatePost } = useCreatePost();
 
