@@ -19,7 +19,7 @@ import {
 import { CreatePostLogo } from "../../assets/contants";
 import { BsFillImageFill } from "react-icons/bs";
 import { useRef, useState } from "react";
-import usePreviewImg from "../../hooks/usePreviewImg";
+import usePreviewImg from "../../hooks/usePreviewimg";
 import useShowToast from "../../hooks/useShowToast";
 import useAuthStore from "../../store/authStore";
 import usePostStore from "../../store/postStore";
